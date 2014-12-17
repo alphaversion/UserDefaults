@@ -2,7 +2,7 @@
 //  UserDefaults.m
 //
 //  Created by yama.
-//	Copyright 2006-2014 Alpha Version Inc.
+//  Copyright 2006-2014 Alpha Version Inc.
 //
 
 #import <Foundation/Foundation.h>
