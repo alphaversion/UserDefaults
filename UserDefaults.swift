@@ -1,7 +1,7 @@
 //
 //  UserDefaults.swift
 //
-//  Created by YAMAGUCHI Masato.
+//  Created by yama.
 //  Copyright 2014 Alpha Version Inc.
 //
 

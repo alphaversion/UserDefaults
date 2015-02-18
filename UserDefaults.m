@@ -1,7 +1,7 @@
 //
 //  UserDefaults.m
 //
-//  Created by YAMAGUCHI Masato.
+//  Created by yama.
 //  Copyright 2006-2014 Alpha Version Inc.
 //
 
