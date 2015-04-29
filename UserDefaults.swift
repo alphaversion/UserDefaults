@@ -26,6 +26,10 @@ func UDFloat(key: String) -> Float {
     return NSUserDefaults.standardUserDefaults().floatForKey(key)
 }
 
+func UDDouble(key: String) -> Double {
+    return NSUserDefaults.standardUserDefaults().doubleForKey(key)
+}
+
 func UDString(key: String) -> String? {
     return NSUserDefaults.standardUserDefaults().stringForKey(key)
 }
@@ -71,6 +75,13 @@ func UDFloat(key: String, defaultValue: Float) -> Float {
         return defaultValue
     }
     return UDFloat(key)
+}
+
+func UDDouble(key: String, defaultValue: Double) -> Double {
+    if UDObject(key) == nil {
+        return defaultValue
+    }
+    return UDDouble(key)
 }
 
 func UDString(key: String, defaultValue: String) -> String? {
@@ -125,6 +136,11 @@ func UDSetBool(key: String, value: Bool) {
 
 func UDSetFloat(key: String, value: Float) {
     NSUserDefaults.standardUserDefaults().setFloat(value, forKey: key)
+    NSUserDefaults.standardUserDefaults().synchronize()
+}
+
+func UDSetDouble(key: String, value: Double) {
+    NSUserDefaults.standardUserDefaults().setDouble(value, forKey: key)
     NSUserDefaults.standardUserDefaults().synchronize()
 }
 
